@@ -1,0 +1,14 @@
+{
+  "name": "basic-blockchain",
+  "version": "0.0.1",
+  "description": "Create an blockchain using crypto-js ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Sufiyan",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  }
+}
