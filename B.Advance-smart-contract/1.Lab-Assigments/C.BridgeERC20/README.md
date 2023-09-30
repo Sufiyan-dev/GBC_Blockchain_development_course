@@ -47,30 +47,30 @@ NOTE: need to deploy the contract and update the addresses in the listner contra
 ## Screenshots
 ### Bridge Mumbai to Localhost
 1.  Approve tokens to bridge contract<br>
-<img src="images/approve-tokens-mumbai-localhost.png" width="700" height="150" />
+<img src="Images/approve-tokens-mumbai-localhost.png" width="700" height="150" />
 2. Calling send token function in the bridge contract
-<img src="images/calling-sendtokens-mumbai-to-localhost.png" width="700" height="300" />
+<img src="Images/calling-sendtokens-mumbai-to-localhost.png" width="700" height="300" />
 3. Metamask sigining of send tokens
-<img src="images/txn-metamask-popup-mumbai-to-localhost.png" width="700" height="400" />
+<img src="Images/txn-metamask-popup-mumbai-to-localhost.png" width="700" height="400" />
 4. Txn confirmation in etherscan
-<img src="images/sendtoken-txn-info-mumbai-to-localhost.png" width="700" height="300" />
+<img src="Images/sendtoken-txn-info-mumbai-to-localhost.png" width="700" height="300" />
 5. Listner performing the bridging
-<img src="images/listner-mumbai-to-localhost.png" width="700" height="100" />
+<img src="Images/listner-mumbai-to-localhost.png" width="700" height="100" />
 6. Hardhat node txns info<br>
-<img src="images/hardhat-node-ss-mumbai-to-localhost.png" width="700" height="400" />
+<img src="Images/hardhat-node-ss-mumbai-to-localhost.png" width="700" height="400" />
 
 ### Bridge Localhost to Mumbai
 1. Calling the script which performs approve and sentokens funtion in the bridge contract
-<img src="images/interaction-script-localhost-mumbai.png" width="700" height="100" />
+<img src="Images/interaction-script-localhost-mumbai.png" width="700" height="100" />
 2. Listner performing the bridging 
-<img src="images/listner-localhost-to-mumbai.png" width="700" height="100" />
+<img src="Images/listner-localhost-to-mumbai.png" width="700" height="100" />
 3. hardhat node txns info<br>
-<img src="images/hardhat-node-localhost-to-mumbai.png" width="700" height="700" />
+<img src="Images/hardhat-node-localhost-to-mumbai.png" width="700" height="700" />
 4. Etherscan txn info of minting token to user
-<img src="images/etherscan-minted-bridge-tokens-localhost-mumbai.png" width="700" height="500" />
+<img src="Images/etherscan-minted-bridge-tokens-localhost-mumbai.png" width="700" height="500" />
 
 ### Unit test
-<img src="https://github.com/Sufiyan-dev/GBC_Blockchain_development_course/blob/main/B.Advance-smart-contract/#Lab-Assigments/C.BridgeERC20/Images/coverage.png" width="700" height="600" />
+<img src="https://github.com/Sufiyan-dev/GBC_Blockchain_development_course/blob/main/B.Advance-smart-contract/1.Lab-Assigments/C.BridgeERC20/Images/coverage.png" width="700" height="600" />
 
 ## Coverage
 - The below is the unit test coeverage of both the token and bridge contract
