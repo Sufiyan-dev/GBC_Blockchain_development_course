@@ -74,7 +74,7 @@ NOTE: need to deploy the contract and update the addresses in the listner contra
 
 ## Coverage
 - The below is the unit test coeverage of both the token and bridge contract
-![Image 1](images/coverage.png)
+<img src="Images/coverage.png" width="700" height="200" />
 
 ## Contract deployment info
 1. Polygon mumbai testnet
