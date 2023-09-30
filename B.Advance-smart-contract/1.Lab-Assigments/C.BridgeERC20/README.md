@@ -70,7 +70,7 @@ NOTE: need to deploy the contract and update the addresses in the listner contra
 <img src="Images/etherscan-minted-bridge-tokens-localhost-mumbai.png" width="700" height="500" />
 
 ### Unit test
-<img src="https://github.com/Sufiyan-dev/GBC_Blockchain_development_course/blob/main/B.Advance-smart-contract/1.Lab-Assigments/C.BridgeERC20/Images/coverage.png" width="700" height="600" />
+<img src="Images/testcases-example.png" width="700" height="600" />
 
 ## Coverage
 - The below is the unit test coeverage of both the token and bridge contract
