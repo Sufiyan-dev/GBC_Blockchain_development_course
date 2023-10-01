@@ -5,8 +5,8 @@ This guide will walk you through the steps to get a random number using the Chai
 ## Prerequisites
 
 - Metamask or a similar Ethereum wallet.
-- Ropsten ETH for gas (get from a faucet like [this one](https://faucet.ropsten.be/)).
-- Chainlink tokens for fees.
+- Sepolia ETH for gas.
+- Chainlink tokens for fees (get it from chainlink faucet).
 - [Remix IDE](https://remix.ethereum.org/) for deploying and interacting with the smart contract.
 
 ## Steps
