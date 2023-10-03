@@ -1,0 +1,13 @@
+.mainarea-main {
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0px;
+}
+
+.main-nftarea-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+}

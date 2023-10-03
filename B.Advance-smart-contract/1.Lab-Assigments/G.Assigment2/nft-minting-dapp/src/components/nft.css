@@ -1,0 +1,29 @@
+.nft-main {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.nft-title {
+    margin: 5px 0px;
+}
+
+.nft-description {
+    margin: 5px 20px;
+    max-width: 150px;
+    font-size: small;
+}
+
+.nft-img {
+    height: 215px;
+}
+
+.wrapper-title-tokenid {
+    display: flex;
+    flex-direction: row;
+    width: 215px;
+    justify-content: space-evenly;
+    align-items: center;
+}

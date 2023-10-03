@@ -1,0 +1,18 @@
+.header-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 30%; 
+}
+
+.btn-connect {
+    height: 30px;
+    width: 115px;
+    border-radius: 5px;
+}
