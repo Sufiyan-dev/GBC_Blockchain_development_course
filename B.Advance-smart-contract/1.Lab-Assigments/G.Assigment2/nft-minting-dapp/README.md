@@ -10,8 +10,8 @@ Welcome to the NFT Minting DApp! Our platform allows users to easily mint NFTs u
 ## Minting Flow
 - ![](./video/minting-flow-1.gif)
 - ![](./video/minting-flow-2.gif)
-Watch the process in action as a user mints their NFT using our platform.
-After minting, users can instantly view their newly minted NFT alongside any other NFTs they own.
+- Watch the process in action as a user mints their NFT using our platform.
+- After minting, users can instantly view their newly minted NFT alongside any other NFTs they own.
 
 ## How to Use
 1. Connect Your Wallet:
