@@ -1,3 +1,8 @@
+# Nft minting dapp
+
+![](./video/minting-flow-1.gif)
+![](./video/minting-flow-2.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
