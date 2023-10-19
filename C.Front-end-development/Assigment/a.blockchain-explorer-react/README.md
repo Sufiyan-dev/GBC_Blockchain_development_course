@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Sufiyan Memon 101490893 Blockchain Explorer React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application designed as a mockup Blockchain Explorer for educational purposes as part of a college project.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+  
+## Overview
 
-### `npm start`
+This React application provides an intuitive interface for users to explore and understand the functionalities typically found in a Blockchain Explorer.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Home Page**: Brief introduction and two main action buttons:
+  - **Make a Transaction**: Directs users to the Addresses tab.
+  - **Add New Address**: [Feature not yet implemented].
 
-### `npm test`
+- **Addresses Tab**: Displays a list of mock blockchain addresses. Clicking on any address will redirect to the Transfer tab.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Transfer Tab**: 
+  - Shows the selected address in the URL.
+  - Provides fields to enter transaction details like the recipient's address and transaction amount.
+  - Upon hitting 'Submit', a mock transaction receipt is displayed with the transaction details.
+  - A 'Clear' button appears, allowing users to clear out the entered data and reset the form.
 
-### `npm run build`
+- **Transactions Tab**: Displays a list of mock transactions for demonstration purposes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Wallet Tab**: Offers a mock representation of a blockchain wallet, showcasing an address and its associated ETH balance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+Ensure you have the following installed on your local development machine:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Node.js](https://nodejs.org/) (and npm)
+- [React](https://reactjs.org/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository to your machine:
+    ```bash
+    git clone https://github.com/Sufiyan-dev/GBC_Blockchain_development_course/tree/main/C.Front-end-development/Assigment/a.blockchain-explorer-react
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Navigate to the project directory:
+    ```bash
+    cd blockchain-explorer-react-app
+    ```
 
-## Learn More
+3. Install project dependencies:
+    ```bash
+    npm install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+1. Start the React development server:
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Open your browser and go to `http://localhost:3000/`.
 
-### Analyzing the Bundle Size
+3. Explore the application's various features and functionalities!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Credits
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was developed as part of a college assignment. Special thanks to our professor and the course teaching assistants for their invaluable guidance and support.
