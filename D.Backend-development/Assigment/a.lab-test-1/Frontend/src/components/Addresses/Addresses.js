@@ -10,7 +10,7 @@ const Addresses = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/account/addresses');
+        const response = await axios.get('http://localhost:4000/account/addresses');
         setAddresses(response.data.result);
         
       } catch (error) {
