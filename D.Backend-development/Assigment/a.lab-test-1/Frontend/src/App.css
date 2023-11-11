@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+.navbar-main {
+  margin: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 10px 0px;
+  list-style: none;
+  padding: 20px 0px;
+}
+
+.nav-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar > li > a {
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+  transition: ease-in-out 0.1s;
+}
+
+.active-tab {
+  border-bottom: 1px solid black;
+}
