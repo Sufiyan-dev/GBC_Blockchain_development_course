@@ -1,0 +1,7 @@
+.address-wrapper {
+    margin: 10px;
+}
+
+.address-wrapper > a {
+    text-align: start;
+}

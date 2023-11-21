@@ -1,0 +1,8 @@
+.receipt-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 15px;
+}
