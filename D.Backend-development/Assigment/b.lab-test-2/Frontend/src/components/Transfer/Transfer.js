@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import Receipt from '../Receipt/Receipt';
 import './Transfer.css'
 
@@ -8,7 +8,6 @@ import './Transfer.css'
 const Transfer = (props) => {
     const [hasSubmit, setHasSubmit] = useState(false);
     const [amount, setAmount] = useState(0);
-    const [toAddress, setToAddress] = useState('');
     const [receipt, setReceipt] = useState(false);
     const [loading, setLoading] = useState(false);
 
@@ -17,8 +16,8 @@ const Transfer = (props) => {
           try {
             setLoading(true);
             const response = (await axios.post('http://localhost:4000/transaction/send', {
-                from: address,
-                to: toAddress,
+                from: defaultAddress,
+                to: address,
                 amount: amount
             }));
             if(response.status === 200) {
@@ -31,7 +30,6 @@ const Transfer = (props) => {
           } finally {
             setLoading(false);
             setAmount(0);
-            setToAddress('');
           }
         };
     
@@ -44,21 +42,19 @@ const Transfer = (props) => {
     
     const { address } = useParams();
 
+    const location = useLocation();
+    const { defaultAddress } = location.state;
+
     const handleChangeAmount = (e) => {
         setAmount(e.target.value)
     }
 
-    const handleChangeToAddress = (e) => {
-        setToAddress(e.target.value);
-        console.log(toAddress)
-    }
-
     const handleSubmit = (e) => {
         e.preventDefault()
-        if(amount > 0 && toAddress.length === 42) {
+        if(amount > 0) {
             setHasSubmit(true);
         } else {
-            alert("Invalid input provided")
+            alert("Invalid amount provided")
         }
        
     }
@@ -66,7 +62,6 @@ const Transfer = (props) => {
     const handleClear = (e) => {
         e.preventDefault()
         setAmount(0);
-        setToAddress('');
         setHasSubmit(false)
     }
 
@@ -82,8 +77,8 @@ const Transfer = (props) => {
         </div>
             <div className='form-wrapper'>
                 <form className='form-main'onSubmit={hasSubmit ? handleClear : handleSubmit}>
-                    <div className='from-wrapper'><b>From : </b>{address}</div>
-                    <div className='to-wrapper'><b>To : </b><input className='input-to' id='input-to' value={toAddress} onChange={handleChangeToAddress} maxLength={42}/></div>
+                    <div className='from-wrapper'><b>From : </b>{defaultAddress}</div>
+                    <div className='to-wrapper'><b>To : </b>{address}</div>
                     <div className='input-wrapper'><b>Amount : </b><input className='input-amount' id='input-amount' value={amount} onChange={handleChangeAmount} type='number' /></div>  
                     <button className='submit-btn' type='submit'>{hasSubmit ? 'Clear' : 'Submit'}</button>
                 </form>

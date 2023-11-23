@@ -16,12 +16,11 @@ const Wallet = () => {
         if (responseAdd.status === 200) {
           setAddresses(responseAdd.data.result);
           if (responseAdd.data.result.length > 0) {
+            const length = responseAdd.data.result.length - 1
             // Set the first address as the default selected address
-            setSelectedAddress(responseAdd.data.result[0]);
+            setSelectedAddress(responseAdd.data.result[length]);
           }
         }
-
-        console.log(addresses.length);
 
         setLoading(false);
       } catch (error) {
