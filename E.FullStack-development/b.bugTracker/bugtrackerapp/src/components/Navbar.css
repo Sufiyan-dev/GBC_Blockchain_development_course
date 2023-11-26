@@ -1,0 +1,30 @@
+.Bug-image {
+    height: 65px;
+}
+
+.top-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-name {
+    margin-left: 10px;
+    font-size: 55px;
+}
+
+.nav-main {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    width: 7%;
+}
+
+.connect-btn {
+    height: 40px;
+    width: 116px;
+    border-radius: 12px;
+    cursor: pointer;
+}
