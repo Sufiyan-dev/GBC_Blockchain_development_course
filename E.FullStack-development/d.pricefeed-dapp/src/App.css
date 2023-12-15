@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 20px;
+  width: 220px;
+  align-items: center;
+}
+
+.token-info {
+  margin: 10px;
+}
+
+.price-wrapper {
+  margin: 20px;
+}
