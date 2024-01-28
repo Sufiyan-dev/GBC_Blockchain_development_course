@@ -9,8 +9,9 @@ metadata:
   name: react
 spec:
   ports:
-    - name: "3000"
-      port: 3000
-      targetPort: 80
+  - name: "3000"
+    port: 3000
+    targetPort: 80
   selector:
     io.kompose.service: react
+  type: LoadBalancer

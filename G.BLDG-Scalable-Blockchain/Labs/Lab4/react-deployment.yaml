@@ -22,10 +22,17 @@ spec:
         io.kompose.service: react
     spec:
       containers:
-        - image: schadokar/eth-react:1.0.0
-          name: react
-          ports:
-            - containerPort: 80
-              hostPort: 3000
-              protocol: TCP
+      - image: schadokar/eth-react:1.0.0
+        name: react
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+          requests:
+            cpu: "200m"
+            memory: "256Mi"
+        ports:
+        - containerPort: 80
+          hostPort: 3000
+          protocol: TCP
       restartPolicy: Always

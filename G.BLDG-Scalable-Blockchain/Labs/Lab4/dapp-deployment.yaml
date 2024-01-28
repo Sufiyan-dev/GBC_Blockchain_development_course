@@ -22,10 +22,20 @@ spec:
         io.kompose.service: dapp
     spec:
       containers:
-        - image: schadokar/eth-server:1.0.0
-          name: dapp
-          ports:
-            - containerPort: 4000
-              hostPort: 4000
-              protocol: TCP
+      - image: schadokar/eth-server:1.0.0
+        name: dapp
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+          requests:
+            cpu: "200m"
+            memory: "256Mi"
+        envFrom:
+        - configMapRef:
+            name: dapp-configmap
+        ports:
+        - containerPort: 4000
+          hostPort: 4000
+          protocol: TCP
       restartPolicy: Always

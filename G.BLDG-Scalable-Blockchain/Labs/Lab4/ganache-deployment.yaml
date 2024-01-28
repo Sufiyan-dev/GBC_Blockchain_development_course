@@ -22,10 +22,17 @@ spec:
         io.kompose.service: ganache
     spec:
       containers:
-        - image: schadokar/eth-ganache:1.0.0
-          name: ganache
-          ports:
-            - containerPort: 8545
-              hostPort: 8545
-              protocol: TCP
+      - image: schadokar/eth-ganache:1.0.0
+        name: ganache
+        # resources:
+        #   requests:
+        #     memory: "128Mi" # Request 128 megabytes of memory
+        #     cpu: "100m" # Request 100 milliCPU (0.1 CPU)
+        #   limits:
+        #     memory: "256Mi" # Limit memory usage to 256 megabytes
+        #     cpu: "500m" # Limit CPU usage to 500 milliCPU (0.5 CPU)
+        ports:
+        - containerPort: 8545
+          hostPort: 8545
+          protocol: TCP
       restartPolicy: Always
