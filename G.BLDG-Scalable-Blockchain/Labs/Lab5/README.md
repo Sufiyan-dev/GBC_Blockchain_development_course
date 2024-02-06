@@ -31,3 +31,8 @@
 ![alt text](./images/19.png)
 ![alt text](./images/20.png)
 ![alt text](./images/21.png)
+- custom dashboard
+![alt text](./images/22.png)
+![alt text](./images/23.png)
+![alt text](./images/24.png)
+![alt text](./images/25.png)
