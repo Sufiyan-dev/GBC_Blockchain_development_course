@@ -1,0 +1,7 @@
+- name: Create directory on remote nodes
+  hosts: all
+  tasks:
+  - name: Create directory
+    file:
+      path: /tmp/my_directory
+      state: directory
